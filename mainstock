@@ -1,0 +1,136 @@
+package stock;
+
+import java.util.Scanner;
+
+public class Mainstock {
+
+    public static void main(String[] args) {
+        
+                //INPUT FOR COMPANY STOCK NAME
+
+
+        System.out.println("Enter stock Symbol or (Enter 'q' to quit):");
+        //prompts for input from user.
+        Scanner inputStck = new Scanner(System.in);
+        //saves company name into c.
+        String c = inputStck.nextLine();
+        System.out.println("You entered " + c);
+
+        
+        
+        
+        
+        
+        ///////////NEED A QUIT FEATURE HERE//////////////
+        
+        
+        
+        
+        
+        
+        
+        //INPUT FOR COMPANY NAME
+        System.out.println(" ");
+
+        System.out.println("Enter company name:");
+
+        //prompts for input from user.
+        Scanner inputName = new Scanner(System.in);
+        //saves company name into i.
+        String i = inputName.nextLine();
+        System.out.println("You entered " + i);
+
+        System.out.println(" ");
+
+        //INPUT FOR PREVIOUS CLOSING PRICE
+        
+        int n;
+
+        Scanner inputStock = new Scanner(System.in);
+        System.out.println("Enter previous closing price:");
+
+        while ((n = inputStock.nextInt()) != 0) {
+            //SAVES PREVIOUS PRICE INTO N
+            System.out.println("You entered " + n);
+            System.out.println(" ");
+
+            break;
+        }
+        
+        //INPUT FOR CURRENT PRICE
+        
+         int p = 3 ;
+
+        Scanner inputCurrent = new Scanner(System.in);
+        System.out.println("Enter current price:");
+
+        while ((p = inputCurrent.nextInt()) >= 3) {
+            //SAVES CURRENT PRICE INTO P
+            System.out.println("You entered " + p);
+            System.out.println(" ");
+
+                break;
+        }
+        
+
+        //CALCULATE PERCENT CHANGE 
+       System.out.print("SYMBOL=" + c +", NAME=" + i +", PreviousPrice=" + n +", CurrentPrice=" + p +", PercentChange=" + stockSymbol.getChangePercent()  );
+
+        //System.exit(0);
+
+    }
+}
+        
+                
+//Stock stockSymbol = new Stock();   // i m making a object of the stock class 
+/*
+Scanner inputStck = new Scanner(System.in);
+        //saves company name into c.
+        String c = inputStck.nextLine();
+        System.out.println("You entered " + c);
+*/
+//  stockSymbol.setSymbol(c);
+
+
+
+////////////////////////////////////////////////////////////////
+
+ /*       
+         System.out.println(" ");
+
+        System.out.println("Enter company name:");
+
+        //prompts for input from user.
+        Scanner inputName = new Scanner(System.in);
+        //saves company name into i.
+        String i = inputName.nextLine();
+        System.out.println("You entered " + i);
+
+        System.out.println(" ");
+*/
+        //  stockName.setName(i);
+        
+
+
+        
+////////////////////////////////////////////////////////////////
+
+/*
+ int n;
+
+        Scanner inputStock = new Scanner(System.in);
+        System.out.println("Enter previous closing price:");
+
+        while ((n = inputStock.nextInt()) != 0) {
+            //SAVES PREVIOUS PRICE INTO N
+            System.out.println("You entered " + n);
+            System.out.println(" ");
+
+            break;
+        }
+        
+*/
+        //  stockPreviousprice.setPreviousClosingPrice(n);
+
+        
+  ////////////////////////////////////////////////////////////////
